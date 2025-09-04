@@ -34,7 +34,7 @@ body {
     color: white;
     height: 300px;
 }
-.side-content {
+.aside-content {
     grid-column: 3 / 4;
     background-color: white;
     padding: 1rem;
