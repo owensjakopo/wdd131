@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd 131</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Owen S. Jakopo - my week 01 homepage">
+    <title>WDD 131 - Dynamic Web Fundamentals - Owen S. Jakopo</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/zim-flag.png">
+
 </head>
 <body>
-    <h1>WDD 131 BYUI - Owen S. Jakopo</h1>
+    <header>
+        <h1 class="watermark">WDD 131 - Dynamic Web Fundamentals<span id="course-title"></span></h1>
+        <nav>
+            <ul>
+            <li><a href="#linkedin">LinkedIn</a></li>
+            <li><a href=" https://byupw.instructure.com/.">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Example</a></li>
+            <li><a href="#my-project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="images/oj-image.jpg" alt="Owen Jakopo">
+        <p class="credit">Owen S. Jakopo</p>
+      </div>
+      <div class="card-content">
+        <h2>About Me</h2>
+        <hr>
+        <div class="two-cols">
+          <p>My name is Owen Simbarashe Jakopo, I am part artist, part computer geek, at least that's my plan. I am christian, a man of faith and family. I am married to Memory Antonio and together we have 2 boys... what a blessing.<br><br>I currently study at Byui, made possible by the Byu-pathway Worldwide where I study online majoring in Software Development.</p>
+          <p>I live in a small town called Chinhoyi which is in the West of the Mashonaland. It is pretty hot, that we do not really feel the winters. <br>This part of Zimbabwe is known for it's rich soil and much precipitation. Most people here are farmers and business people. These people need or will, sooner or later, websites and mobile apps to advertize and sell their produce. That is exactly where we come in.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="images/wide-image.jpg" alt="Francesco Califano / Unsplash">
+        <p class="credit">
+        <a href="https://unsplash.com/photos/blue-sky-over-the-sea-kAC8c1Sq58Y" target="_blank">
+        Francesco Califano / Unsplash
+        </a>
+    </p>
+        </div>
+      <h2>My Links</h2>
+      <hr>
+      <a href="https://chatgpt.com" target="_blank">ChatGPT</a>
+      <a href="https://byupathway.edu" target="_blank">Byu-pathway</a>
+      <a href="https://github.com" target="_blank">Github</a>
+      <a href="https://picresize.com" target="_blank">PicResize</a>
+      <a href="https://jigsaw.w3.org" target="_blank">Validation Services</a>
+    </div>
+  </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Owen S. Jakopo | Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

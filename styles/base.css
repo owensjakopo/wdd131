@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+h1 {
+    font-weight: 100;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: grey;
+    color: #fff;
+}
+nav, footer {
+    background-color: maroon;
+    margin: 0 auto;
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    border: 1px solid grey;
+    
+}
+main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+    .card-content p {
+      padding-top: 20px;
+      line-height: 1.2rem;
+    }
+    .card a {
+      display: block;
+      justify-content: center;
+      text-decoration: none;
+      margin: 10px;
+    }
+    .image-wrapper {
+  position: relative;
+    }
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+    .card h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+.credit {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 0.75rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.image-wrapper:hover .credit {
+  opacity: 1;
+}
+.credit a {
+  color: #fff;
+  text-decoration: none;
+}
+.credit a:hover {
+  text-decoration: underline;
+}
+.two-cols {
+    display: flex;
+    gap: 20px;
+}
+.two-cols p {
+    flex: 1;
+    margin: 0;
+}
+hr {
+  margin-left: 70px;
+  margin-right: 70px;
+  height: 3px;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px maroon;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: #fff;}
+    
+@media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+@media (min-width: 640px) {
+    nav ul {
+		display: flex;}
+	}
+
+    nav ul li {
+		flex: 1 1 100%;
+     }
+@media (max-width: 768px) {
+  .two-cols {
+    flex-direction: column;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .image-wrapper:hover .credit {
+    opacity: 1;
+  }
+}
