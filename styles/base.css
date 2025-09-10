@@ -117,6 +117,9 @@ hr {
   border-radius: 3px;
   box-shadow: 0 2px 3px maroon;
 }
+.name {
+  color: maroon;
+}
 footer {
     text-align: center;
     padding: 1rem;
