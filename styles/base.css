@@ -21,15 +21,20 @@ h1, h2, h3, h4 {
     padding: 0 1rem;
 }
 
-nav {
-    margin-bottom: 2rem;
+header {
+    background-color: armyblue;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 .navigation {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    background-color: #444;
 }
 
 .navigation li {
@@ -38,7 +43,7 @@ nav {
 
 .navigation a {
     color: #fff;
-    padding: 20px 25px; 
+    padding: 20px 25px;
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -50,12 +55,13 @@ nav {
     background-color: #555;
     transform: scale(1.05);
 }
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     background-color: #e2e2e2;
-    padding: 20px;
+    padding: 2rem;
 }
 
 main h1 {
@@ -64,7 +70,7 @@ main h1 {
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -77,6 +83,7 @@ main h1 {
     transform: translateY(-5px); 
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
+
 .card img {
     display: block;
     width: 100%;
@@ -93,15 +100,13 @@ main h1 {
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 
-
 .card h2 {
-    text-align: center;
     margin-bottom: 0.5rem;
 }
 
 .course {
     grid-column: 1 / -1;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -146,6 +151,7 @@ footer p {
     .navigation a {
         text-align: center;
         border-top: 1px solid #444;
+        padding: 15px 0;
     }
 
     main {
